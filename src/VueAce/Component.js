@@ -78,7 +78,7 @@ export default {
         
         //editor.setOption("enableEmmet", true);
         editor.getSession().setMode(typeof lang === 'string' ? ( 'ace/mode/' + lang ) : lang);
-        editor.setTheme('ace/theme/'+theme);
+        editor.setTheme(require('ace-builds/src-min-noconflict/theme-' + theme));
         if(this.value)
             editor.setValue(this.value,1);
         this.contentBackup = this.value;
