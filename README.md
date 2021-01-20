@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="vue-ace.png" />
+	<img width="300" src="vue-ace.png" />
 </p>
 
 **Install**
