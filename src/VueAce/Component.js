@@ -31,6 +31,9 @@ export default {
                 return n+"px";
             }
             return n;
+        },
+        getInstance () {
+            return ace;
         }
     },
     watch:{
