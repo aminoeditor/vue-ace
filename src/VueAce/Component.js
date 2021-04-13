@@ -32,8 +32,8 @@ export default {
             }
             return n;
         },
-        getInstance () {
-            return ace;
+        setWorker(type) {
+            ace.config.setModuleUrl("ace/mode/" + type + "_worker", requre("file-loader!ace-builds/src-noconflict/worker-" + type));
         }
     },
     watch:{
