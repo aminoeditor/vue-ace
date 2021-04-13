@@ -1,5 +1,5 @@
 const ace = require('ace-builds/src-min-noconflict/ace');
-require("ace-builds/webpack-resolver");
+//require("ace-builds/webpack-resolver");
 
 export default {
     render: function (h) {
@@ -32,8 +32,8 @@ export default {
             }
             return n;
         },
-        setWorker(type) {
-            ace.config.setModuleUrl("ace/mode/" + type + "_worker", require("file-loader!ace-builds/src-noconflict/worker-" + type));
+        getInstance() {
+            return ace;
         }
     },
     watch:{
