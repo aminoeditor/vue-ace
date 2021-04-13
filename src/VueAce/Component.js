@@ -1,5 +1,4 @@
 const ace = require('ace-builds/src-min-noconflict/ace');
-//require("ace-builds/webpack-resolver");
 
 export default {
     render: function (h) {
@@ -72,14 +71,11 @@ export default {
         var lang = this.lang||'text';
         var theme = this.theme||'chrome';
 
-        //require('brace/ext/emmet');
-
         var editor = vm.editor = ace.edit(this.$el);
         editor.$blockScrolling = Infinity;
 
         this.$emit('init',editor);
         
-        //editor.setOption("enableEmmet", true);
         editor.getSession().setMode(typeof lang === 'string' ? ( 'ace/mode/' + lang ) : lang);
         editor.setTheme(require('ace-builds/src-min-noconflict/theme-' + theme));
         if(this.value)
