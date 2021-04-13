@@ -33,7 +33,7 @@ export default {
             return n;
         },
         setWorker(type) {
-            ace.config.setModuleUrl("ace/mode/" + type + "_worker", requre("file-loader!ace-builds/src-noconflict/worker-" + type));
+            ace.config.setModuleUrl("ace/mode/" + type + "_worker", require("file-loader!ace-builds/src-noconflict/worker-" + type));
         }
     },
     watch:{
