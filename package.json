@@ -1,6 +1,6 @@
 {
   "name": "@aminoeditor/vue-ace",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Easily integrate Ace Editor into Vue.js",
   "main": "dist/vue-ace.js",
   "scripts": {
